@@ -1,7 +1,7 @@
 
 footer{
     margin-top: 20px;
-    background-color: #333;
+    background-color: @color-x-d;
     
     ul{
         list-style: none;
@@ -19,22 +19,44 @@ footer{
         padding-top: 50px;
         nav{
             margin-top: 90px;
-        }
-        a{
-            color:gray;
-            &:hover{
-                color:blanchedalmond;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            font-weight: 700;
+            font-family: 'Fira Sans';
+            text-transform: @tran;
+            a{
+                color: @color-x;
+                &:hover{
+                    color: @color-v;
+                }
             }
         }
+        
         .subscribe{
             margin-top: 80px;
+            padding: 5px 10px;
+            width: 160px;
+            height: 40px;
+            text-transform: @tran;
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 24px;
+            color: @color-x;
+            font-weight: 700;
+            font-family: 'Fira Sans';
+            border: 2.5px solid @color-4;
+            i{
+                color: @color-v;
+                font-size: 20px;
+            }
         
         }
         hr{
-            width: 70%;
+            width: 80%;
             size: 5px;
             text-align: center;
-            color: #2b2b2b;
+            color: @color-b;
         }
        
     }
@@ -42,17 +64,28 @@ footer{
         margin-top: 90px;
         padding-bottom: 30px;
         p{
-            color: gray;
+            font-size: 14px;
+            line-height: 28px;
+            color: @color-d-x;
+            font-weight: 400;
+            font-family: 'Fira Sans';
         }
-        i{
-            color:@color-1  ;
-            &:hover{
-                color:black;
-                background-color:#d6ba8d;
+        li{
+            .fa{
+                padding-top: 15px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                border: 2px solid @color-4;
+                color: @color-x;
+                &:hover{
+                    color:@color-b;
+                    background: @color-v;
+                }
             }
-            
-        }
-       
+        }  
     }
     
 }

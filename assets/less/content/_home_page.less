@@ -6,46 +6,65 @@
 
 
 
-@color-1: white;
+@color-w: white;
+@color-b: black;
+@color-x: #ababab;
+@color-c: #cccccc;
+@color-x-d: #333333;
+@color-d-x: #696969;
+@color-v: #d6ba8d;
+@color-r: red;
+@color-xb: #92c5d9;
+@color-bg-b: #faf9f9;
+@color-4: #404040;
 @tran: uppercase;
 @opacity-1: 0.5;
 @size-1: 10px;
+
 body{
-    background-color: #fff;
-    font-family: "Cormorant Garamond";
+    background-color: @color-w;
+    font-family: 'Cormorant Garamond','Fira Sans', serif;
 }
-h6,a,p,h5{  
-    font-family: "Fira Sans";
-}  
 
 h1,h6{
     text-transform: @tran;
 }
-// $container-max-widths:(
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px,
-//   xxl: 1200px
-// )
+
 .container{
     max-width: 1200px;
 }
 main{
-    
+    background-color: @color-w;
     margin-top: -12%;
     text-align: center;
+    line-height: 28px;
     .main-intro{
         margin-bottom: 50px;
+        h6{
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+        }
         p{
-            color: #ababab;
-            font-size: @size-1;
+            color: @color-x;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            font-family: 'Fira Sans';
             
         }
         h3{
             padding: 20px;
             margin: 50px 0;
-            font-weight: normal;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 48px;
+            color: @color-x-d;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
         }
     }
     .main-item{
@@ -57,60 +76,131 @@ main{
             max-width: 100%;
             max-height: 100%;
         }
-
+        .name{
+            font-size: 24px;
+            letter-spacing: 1px;
+            line-height: 36px;
+            color: @color-x-d;
+            font-weight: 400;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+        }
+        .price{
+            font-size: 24px;
+            letter-spacing: 1px;
+            line-height: 36px;
+            color: @color-v;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond';
+            text-align: center;
+        }
         .main-sub-item-1{
-            
                 position: relative;
                 .item__content-1{
                     position: absolute;
                     bottom: 8%;
                     left: 32%;
-                    .price{
-                        color:#dec8a4;
-                    }
+                    
                 }
-            }
+        }
         .main-sub-item-2{
         
             position: relative;  
             .item__content-2{
                 align-content: center;
                 position: absolute;
-                
                 top: 24%;
-                left: 62.5%;
+                left: 63%;
+                p{
+                    font-size: 18px;
+                    letter-spacing: 4px;
+                    color: @color-x-d;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
+                    text-align: center;
+                    margin-bottom: 0.5em;
+                }
                 h5{
+                    font-size: 24px;
+                    line-height: 64px;
+                    color: @color-d-x;
+                    font-weight: 700;
+                    font-family: 'Cormorant Garamond';
+                    text-align: center;
+                    margin-bottom: 0.5em;
                     span{
-                        font-size: 80px;
-                        font-weight: 700;
+                        font-size: 100px;
+                        line-height: 36px;
+                        color: @color-x-d;
                     }
                 }
                 a{
                     text-decoration: none;
-                    color: black;
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    color: @color-d-x;
+                    font-weight: 700;
+                    font-family: 'Fira Sans';
+                    text-align: center;
+                    text-transform: @tran;
                 }
             }
         }
+        .main-sub-item-3{
+            
+            position: relative;
+            .item__content-3{
+                position: absolute;
+                bottom: 15%;
+                left: 18%;
+                p{
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    color: @color-x-d;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
+                    text-align: left;
+                    text-transform: @tran;
+                    line-height: 24px;
+                }
+                h4{
+                    font-size: 72px;
+                    line-height: 47px;
+                    color: @color-v;
+                    font-weight: 700;
+                    font-family: 'Fira Sans';
+                    text-align: left;
+                }
+            }
+    }
         .main-sub-item-5{
             position: relative;
             .item__content-5{
                 position: absolute;
                 bottom: 8%;
-                left: 32%;
-                .price{
-                    color:#dec8a4;
-                }
+                left: 24%;
+                
             }
         }
         .main-sub-item-6{
             .item__content-6{
                 position: absolute;
                 text-align: left;
-                bottom: 18%;
-                left: 55%;
+                bottom: 15%;
+                left: 57%;
                 h5{
-                    
-                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 56px;
+                    color: @color-x-d;
+                    font-weight: 700;
+                    font-family: 'Cormorant Garamond';
+                }
+                p{
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: @color-d-x;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
                 }
             }
         }
@@ -121,62 +211,94 @@ main{
         margin-top: 100px;
         .product-title{
             margin: 50px 0;
-        }
-        a{
-            text-transform: @tran;
-            text-decoration: none;
-            color: black;
-            i{
-                color: burlywood;
+            h2{
+                text-align: left;
+                font-size: 56px;
+                line-height: 28px;
+                color: @color-x-d;
+                font-weight: 700;
+                font-family: 'Cormorant Garamond';
+            }
+            a{  
+                
+                text-align: right;
+                text-transform: @tran;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 24px;
+                color: @color-x-d;
+                font-weight: 700;
+                font-family: 'Fira Sans';
+                i{
+                    color: @color-v;
+                }
             }
         }
+        
         .name-product{
-            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 36px;
+            color: @color-x-d;
+            font-weight: 400;
+            font-family: 'Fira Sans';
+            text-align: center;
+            .price-product{
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 36px;
+                color: @color-v;
+                font-weight: 700;
+                font-family: 'Cormorant Garamond';
+                text-align: center;
+            }
         }
-        .price-product{
-            color:#dec8a4;
-        }
+        
         .product-hover{
+            align-items: center;
             position: relative;
             img{
                 display: block;
+                width: 100%;
             }
             .add-to-cart{
                 position: absolute;
                 bottom: 0;
                 background: rgb(0, 0, 0);
-                background: rgba(0, 0, 0, 0.5); /* Black see-through */
-                color: #f1f1f1;
+                background: rgba(0, 0, 0, 0.5);
+                color: @color-w;
                 width: 100%;
                 transition: .5s ease; 
                 opacity: 0;
-                ul{
-                    
-                    display:flex;
-                    flex-flow: row nowrap;
-                    margin-top: 7px;
-                    align-items: center;
-                    li{
-                        list-style: none;
-                        button{
-                            color: @color-1;
-                            background-color: #d6ba8d;
-                            text-transform: uppercase   ;
-                            &:hover {
-                                color: red;
-                            }
+                display: flex;
+                .sub-add{
+                    width: 52%;
+                    margin: 0;
+                    left: 0;
+                    box-sizing: border-box;
+                    background-color: @color-v;
+                    a{
+                        text-decoration: none;
+                        text-transform: @tran;
+                        color: @color-w;
+                        &:hover {
+                            color: @color-r;
                         }
-                        i{
-                            margin-left: 2px;
-                            line-height: 18px;
-                            padding: 5px;
-                            background-color: black;
-                            color: @color-1;
-                            &:hover {
-                                color: red;
-                            }
+                    }
+                }
+                .sub-icon{
+                    width: 16%;
+                    margin: 0;
+                    border-width: 0 0 0 2px;
+                    border-style: solid;
+                    border-color: @color-w;
+                    background: @color-d-x;
+                    a{
+                        color: @color-c;
+                        &:hover {
+                            color: @color-r;
                         }
-                        
                     }
                 }
             }
@@ -189,11 +311,11 @@ main{
 
     }
     .main-blog{
-        background-color: #faf9f9;
+        background: @color-bg-b;
         margin: 100px 0;
         .blog-content{
             margin-top: 20px;
-            background-color: @color-1;
+            background-color: @color-w;
             border-color: rgba(0, 0, 0, 0.5);
             padding: 5px;
         }
@@ -202,22 +324,43 @@ main{
         }
         h2{
             margin-top: -20px;
+            font-size: 56px;
+            line-height: 28px;
+            color: @color-x-d;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond';
             
         }
         .blog__time{
             opacity: @opacity-1;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            color: @color-c;
+            font-weight: 400;
+            font-family: 'Fira Sans';
         }
         .blog__title{
-            font-size: 20px;
+            font-size: 24px;
+            letter-spacing: 1px;
+            line-height: 32px;
+            color: @color-x-d;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond';
         }
         .blog__view-share{
+            
             i{
                 font-size: @size-1;
                 opacity: @opacity-1;
-                color: #92c5d9;
+                color: @color-xb;
                 font-style: normal;
                 span{
-                    color: black;
+                    color: @color-x-d;
+                    font-size: 14px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
                 }
                 &:hover{
                     opacity: 1;
@@ -227,15 +370,21 @@ main{
         button{
             margin-top: 50px;
             margin-bottom: 50px;
-            background-color: @color-1;
+            background-color: @color-w;
+            width: 160px;
             height: 20px;
             border: none;
+            text-align: center;
             a{
-                
-                color:black;
+                top: -70%;
+                position: relative;
+                font-size: 24px;
+                color: @color-x-d;
+                font-weight: 400;
+                font-family: 'Cormorant Garamond';
                 text-decoration: none;
                 &:hover{
-                    color:red;
+                    color: @color-v;
                 }
             }
         }

@@ -1,6 +1,5 @@
 header {
     position: relative;
-    
     .header-banner {
         height: 80%;
         div{
@@ -8,10 +7,10 @@ header {
             img{
                 width: 100%;
             }
-        }  
+        }
     }
     a{
-        color: @color-1;
+        color: @color-w;
         text-decoration: none;
     }
     .header-top{
@@ -30,6 +29,15 @@ header {
                 flex-flow: row nowrap;
                 li{
                     margin-left: 20px;
+                    .bag{
+                        top: -10px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: @color-w;
+                        color: @color-b;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -39,40 +47,63 @@ header {
         margin: 0;
         padding: 0 1em;
         position: absolute;
-        top: 30%;
+        top: 28%;
         left: 18%;
-        h5{
-            font-style: normal;
-            word-spacing: 20px;
-            opacity: @opacity-1;
-            letter-spacing: @size-1;
-            font-family: "Fira Sans";
-        }
-        h1{
-            font-size: 70px;
-            letter-spacing: 30px;
-            // line-height: 100px;
-            color: #333333;
-            font-weight: 600;
-            font-style: italic;
-     
+        .sub-header-title{
+            h5{
+                font-size: 24px;
+                letter-spacing: 12px;
+                line-height: 32px;
+                color: @color-d-x;
+                font-weight: 400;
+                font-family: 'Fira Sans';
+            }
+            h1{
+                font-size: 110px;
+                letter-spacing: 30px;
+                line-height: 100px;
+                color: @color-x-d;
+                font-weight: 500;
+                font-style: italic;
+                font-family: 'Cormorant Garamond';
+         
+            }
+            button{
+                background-color: @color-b;
+                padding: @size-1;
+                a{
+                    font-weight: 700;
+                    text-transform: @tran;
+                    letter-spacing: 2px;
+                    line-height: 24px;
+                    font-family: 'Fira Sans';
+                    color: @color-w;
+                    &:hover{
+                        color: @color-r;
+                    }
+                }
+            }
         }
         ul li{
             top: 20%;
             list-style: none;
+            text-align: right;
             a{
+                font-size: 24px;
+                letter-spacing: 2px;
+                line-height: 40px;
+                color: @color-w;
+                font-weight: 500;
+                font-family: 'Cormorant Garamond';
+                text-align: right;
                 opacity: @opacity-1;
                 &:hover{
                     opacity: 1;
-                    color: @color-1;
                 }
             }
             
         }
-        button{
-            background-color: black;
-            padding: @size-1;
-        }
+       
     }
     
 }
