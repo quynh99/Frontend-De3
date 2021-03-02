@@ -26,24 +26,24 @@ body{
     font-family: 'Cormorant Garamond','Fira Sans', serif;
 }
 
-h1,h6{
-    text-transform: @tran;
-}
 
 .container{
     max-width: 1200px;
 }
+
 main{
     background-color: @color-w;
-    margin-top: -12%;
     text-align: center;
     line-height: 28px;
     .main-intro{
+        margin-top: 20px;
         margin-bottom: 50px;
         h6{
             font-size: 18px;
             letter-spacing: 2px;
             font-weight: 700;
+            line-height: 28px;
+            text-transform: @tran;
             font-family: 'Cormorant Garamond', serif;
             text-align: center;
         }
@@ -57,7 +57,7 @@ main{
         }
         h3{
             padding: 20px;
-            margin: 50px 0;
+            margin: 70px 0;
             font-weight: 700;
             font-size: 34px;
             line-height: 48px;
@@ -68,21 +68,27 @@ main{
         }
     }
     .main-item{
-        position: relative;
+        .container-fluid{
+            max-width: 1740px;
+        }
         
+        position: relative;
+        padding-bottom: 10px;
         img {
-            padding: 10px;
+            padding-bottom: 20px;
             object-fit: cover;
             max-width: 100%;
             max-height: 100%;
+            margin-bottom: 20px;
         }
         .name{
+            padding: 10px;
             font-size: 24px;
             letter-spacing: 1px;
             line-height: 36px;
             color: @color-x-d;
             font-weight: 400;
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Fira Sans';
             text-align: center;
         }
         .price{
@@ -109,16 +115,16 @@ main{
             .item__content-2{
                 align-content: center;
                 position: absolute;
-                top: 24%;
+                top: 20%;
                 left: 63%;
                 p{
                     font-size: 18px;
                     letter-spacing: 4px;
+                    line-height: 64px;
                     color: @color-x-d;
                     font-weight: 400;
                     font-family: 'Fira Sans';
                     text-align: center;
-                    margin-bottom: 0.5em;
                 }
                 h5{
                     font-size: 24px;
@@ -151,7 +157,7 @@ main{
             position: relative;
             .item__content-3{
                 position: absolute;
-                bottom: 15%;
+                bottom: 20%;
                 left: 18%;
                 p{
                     font-size: 14px;
@@ -208,9 +214,10 @@ main{
         
     }
     .main-product{
-        margin-top: 100px;
+        margin-top: 90px;
         .product-title{
-            margin: 50px 0;
+            margin-top: 38px;
+            margin-bottom: 60px;
             h2{
                 text-align: left;
                 font-size: 56px;
@@ -231,15 +238,17 @@ main{
                 font-weight: 700;
                 font-family: 'Fira Sans';
                 i{
+                    text-align: right;
                     color: @color-v;
                 }
             }
         }
         
         .name-product{
+            margin-top: 10px;
             font-size: 14px;
             letter-spacing: 1px;
-            line-height: 36px;
+            line-height: 30px;
             color: @color-x-d;
             font-weight: 400;
             font-family: 'Fira Sans';
@@ -247,7 +256,7 @@ main{
             .price-product{
                 font-size: 18px;
                 letter-spacing: 1px;
-                line-height: 36px;
+                line-height: 20px;
                 color: @color-v;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
@@ -269,6 +278,7 @@ main{
                 background: rgba(0, 0, 0, 0.5);
                 color: @color-w;
                 width: 100%;
+                height: 12.5%;
                 transition: .5s ease; 
                 opacity: 0;
                 display: flex;
@@ -277,11 +287,15 @@ main{
                     margin: 0;
                     left: 0;
                     box-sizing: border-box;
+                    align-items: center;
+                    padding: 6px;
                     background-color: @color-v;
                     a{
                         text-decoration: none;
                         text-transform: @tran;
                         color: @color-w;
+                        text-align: justify;
+                        padding-top: 20px;
                         &:hover {
                             color: @color-r;
                         }
@@ -290,6 +304,7 @@ main{
                 .sub-icon{
                     width: 16%;
                     margin: 0;
+                    padding: 6px;
                     border-width: 0 0 0 2px;
                     border-style: solid;
                     border-color: @color-w;
@@ -312,15 +327,55 @@ main{
     }
     .main-blog{
         background: @color-bg-b;
-        margin: 100px 0;
+        margin-top: 100px;
+        padding-bottom: 80px;
         .blog-content{
-            margin-top: 20px;
+            width: 100%;
+            margin: 30px;
             background-color: @color-w;
             border-color: rgba(0, 0, 0, 0.5);
             padding: 5px;
-        }
-        p{
-            margin-top: @size-1;
+            text-align: left;
+            img{
+                width: 100%;
+            }
+            .blog__time{
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 24px;
+                color: @color-c;
+                font-weight: 400;
+                font-family: 'Fira Sans';
+                margin: 30px;
+            }
+            .blog__title{
+                margin: 30px;
+                font-size: 24px;
+                letter-spacing: 1px;
+                line-height: 32px;
+                color: @color-x-d;
+                font-weight: 700;
+                font-family: 'Cormorant Garamond';
+            }
+            .blog__view-share{
+                margin: 30px;
+                i{
+                    font-size: @size-1;
+                    opacity: @opacity-1;
+                    color: @color-xb;
+                    font-style: normal;
+                    span{
+                        color: @color-x-d;
+                        font-size: 14px;
+                        line-height: 32px;
+                        font-weight: 400;
+                        font-family: 'Fira Sans';
+                    }
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
         }
         h2{
             margin-top: -20px;
@@ -329,46 +384,12 @@ main{
             color: @color-x-d;
             font-weight: 700;
             font-family: 'Cormorant Garamond';
+            margin-bottom: 70px;
             
         }
-        .blog__time{
-            opacity: @opacity-1;
-            font-size: 14px;
-            letter-spacing: 1px;
-            line-height: 24px;
-            color: @color-c;
-            font-weight: 400;
-            font-family: 'Fira Sans';
-        }
-        .blog__title{
-            font-size: 24px;
-            letter-spacing: 1px;
-            line-height: 32px;
-            color: @color-x-d;
-            font-weight: 700;
-            font-family: 'Cormorant Garamond';
-        }
-        .blog__view-share{
-            
-            i{
-                font-size: @size-1;
-                opacity: @opacity-1;
-                color: @color-xb;
-                font-style: normal;
-                span{
-                    color: @color-x-d;
-                    font-size: 14px;
-                    line-height: 32px;
-                    font-weight: 400;
-                    font-family: 'Fira Sans';
-                }
-                &:hover{
-                    opacity: 1;
-                }
-            }
-        }
-        button{
-            margin-top: 50px;
+        
+        .blog-khoi{
+            margin-top: 40px;
             margin-bottom: 50px;
             background-color: @color-w;
             width: 160px;
@@ -390,7 +411,7 @@ main{
         }
     }
     .main-logo{
-        margin-top: 30px;
+        margin: 50px 0;
         img{
             opacity: 0.3;
             &:hover{

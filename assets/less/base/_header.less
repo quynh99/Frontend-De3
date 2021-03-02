@@ -1,7 +1,7 @@
 header {
     position: relative;
     .header-banner {
-        height: 80%;
+        width: 100%;
         div{
             padding: 0;
             img{
@@ -27,6 +27,9 @@ header {
                 list-style: none;
                 display:flex;
                 flex-flow: row nowrap;
+                -ms-flex-flow: row wrap;
+                -moz-flex-flow: row wrap;
+                -webkit-flex-flow: row wrap;
                 li{
                     margin-left: 20px;
                     .bag{
@@ -44,6 +47,7 @@ header {
         
     }
     .header-title{
+        // max-width: 1720px;
         margin: 0;
         padding: 0 1em;
         position: absolute;
@@ -59,19 +63,24 @@ header {
                 font-family: 'Fira Sans';
             }
             h1{
-                font-size: 110px;
+                font-size: 100px;
+                text-transform: @tran;
                 letter-spacing: 30px;
                 line-height: 100px;
                 color: @color-x-d;
-                font-weight: 500;
+                font-weight: 600;
+                text-align: left;
                 font-style: italic;
                 font-family: 'Cormorant Garamond';
          
             }
-            button{
+            div{
                 background-color: @color-b;
                 padding: @size-1;
+                width: 20%;
+                text-align: center;
                 a{
+                    font-size: 16px;
                     font-weight: 700;
                     text-transform: @tran;
                     letter-spacing: 2px;
@@ -84,25 +93,29 @@ header {
                 }
             }
         }
-        ul li{
-            top: 20%;
-            list-style: none;
-            text-align: right;
-            a{
-                font-size: 24px;
-                letter-spacing: 2px;
-                line-height: 40px;
-                color: @color-w;
-                font-weight: 500;
-                font-family: 'Cormorant Garamond';
+        ul{
+            margin-top: 20%;
+            li{
+                list-style: none;
                 text-align: right;
-                opacity: @opacity-1;
-                &:hover{
-                    opacity: 1;
+                a{
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                    line-height: 40px;
+                    color: @color-w;
+                    font-weight: 500;
+                    font-family: 'Cormorant Garamond';
+                    text-align: right;
+                    opacity: @opacity-1;
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
+                
             }
-            
+
         }
+        
        
     }
     

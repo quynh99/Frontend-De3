@@ -2,21 +2,12 @@
 footer{
     margin-top: 20px;
     background-color: @color-x-d;
-    
-    ul{
-        list-style: none;
-        display:flex;
-        flex-flow: row wrap;
-        li{
-        margin-right: 20px;
-            a{
-                text-decoration: none;
-            }
-        }
-    }
+
     .footer-top{
-        
         padding-top: 50px;
+        img{
+            text-align: left;
+        }
         nav{
             margin-top: 90px;
             font-size: 14px;
@@ -25,14 +16,26 @@ footer{
             font-weight: 700;
             font-family: 'Fira Sans';
             text-transform: @tran;
-            a{
-                color: @color-x;
-                &:hover{
-                    color: @color-v;
+            ul{
+                list-style: none;
+                display:flex;
+                flex-flow: row wrap;
+                -ms-flex-flow: row wrap;
+                -moz-flex-flow: row wrap;
+                -webkit-flex-flow: row wrap;
+                justify-content: center;
+                li{
+                margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: @color-x;
+                        &:hover{
+                            color: @color-v;
+                        }
+                    }
                 }
             }
         }
-        
         .subscribe{
             margin-top: 80px;
             padding: 5px 10px;
@@ -53,39 +56,54 @@ footer{
         
         }
         hr{
-            width: 80%;
-            size: 5px;
+            margin: 45px 0;
+            width: 100%;
+            resize: 5px;
             text-align: center;
             color: @color-b;
         }
        
     }
     .footer-bot{
-        margin-top: 90px;
-        padding-bottom: 30px;
+        padding-bottom: 60px;
         p{
+            padding: 2px 0;
+            text-align: left;
             font-size: 14px;
             line-height: 28px;
             color: @color-d-x;
             font-weight: 400;
             font-family: 'Fira Sans';
         }
-        li{
-            .fa{
-                padding-top: 15px;
-                width: 50px;
-                height: 50px;
-                text-align: center;
-                text-decoration: none;
-                border-radius: 50%;
-                border: 2px solid @color-4;
-                color: @color-x;
-                &:hover{
-                    color:@color-b;
-                    background: @color-v;
+        ul{
+            display:flex;
+            flex-flow: row nowrap;
+            -ms-flex-flow: row wrap;
+            -moz-flex-flow: row wrap;
+            -webkit-flex-flow: row wrap;
+            padding: 0;
+            text-align: right;
+            justify-content: flex-end;
+            list-style: none;
+            li{
+                margin-left: 5px;
+                .fa{
+                    padding: 15px 5px;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    border: 2px solid @color-4;
+                    color: @color-x;
+                    &:hover{
+                        color:@color-b;
+                        background: @color-v;
+                    }
                 }
-            }
-        }  
+            } 
+        }
+         
     }
     
 }
