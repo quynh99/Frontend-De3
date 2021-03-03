@@ -36,28 +36,38 @@ main{
     text-align: center;
     line-height: 28px;
     .main-intro{
-        margin-top: 20px;
         margin-bottom: 50px;
-        h6{
-            font-size: 18px;
-            letter-spacing: 2px;
-            font-weight: 700;
-            line-height: 28px;
-            text-transform: @tran;
-            font-family: 'Cormorant Garamond', serif;
-            text-align: center;
+        .container-fluid{
+            max-width: 1740px;
         }
-        p{
-            color: @color-x;
-            font-size: 14px;
-            line-height: 28px;
-            font-weight: 400;
-            font-family: 'Fira Sans';
-            
+        .sub-main-intro{
+            .sub-main-intro-item{
+                padding: 17px 102px;
+                h6{
+                    text-align: center;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    text-transform: @tran;
+                    font-family: 'Cormorant Garamond', serif;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    color: @color-x;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
+                    
+                }
+            }
         }
+        
         h3{
             padding: 20px;
-            margin: 70px 0;
+            margin: 60px 0 50px 0;
             font-weight: 700;
             font-size: 34px;
             line-height: 48px;
@@ -79,7 +89,7 @@ main{
             object-fit: cover;
             max-width: 100%;
             max-height: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .name{
             padding: 10px;
@@ -104,8 +114,8 @@ main{
                 position: relative;
                 .item__content-1{
                     position: absolute;
-                    bottom: 8%;
-                    left: 32%;
+                    bottom: 9%;
+                    left: 26%;
                     
                 }
         }
@@ -115,8 +125,8 @@ main{
             .item__content-2{
                 align-content: center;
                 position: absolute;
-                top: 20%;
-                left: 63%;
+                top: 19%;
+                left: 65%;
                 p{
                     font-size: 18px;
                     letter-spacing: 4px;
@@ -125,6 +135,7 @@ main{
                     font-weight: 400;
                     font-family: 'Fira Sans';
                     text-align: center;
+                    margin-bottom: 28px;
                 }
                 h5{
                     font-size: 24px;
@@ -133,7 +144,7 @@ main{
                     font-weight: 700;
                     font-family: 'Cormorant Garamond';
                     text-align: center;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 42px;
                     span{
                         font-size: 100px;
                         line-height: 36px;
@@ -157,7 +168,7 @@ main{
             position: relative;
             .item__content-3{
                 position: absolute;
-                bottom: 20%;
+                bottom: 21%;
                 left: 18%;
                 p{
                     font-size: 14px;
@@ -168,6 +179,7 @@ main{
                     text-align: left;
                     text-transform: @tran;
                     line-height: 24px;
+                    margin-bottom: 36px;
                 }
                 h4{
                     font-size: 72px;
@@ -183,8 +195,8 @@ main{
             position: relative;
             .item__content-5{
                 position: absolute;
-                bottom: 8%;
-                left: 24%;
+                bottom: 9%;
+                left: 18%;
                 
             }
         }
@@ -192,14 +204,15 @@ main{
             .item__content-6{
                 position: absolute;
                 text-align: left;
-                bottom: 15%;
-                left: 57%;
+                bottom: 21%;
+                left: 54%;
                 h5{
                     font-size: 48px;
                     line-height: 56px;
                     color: @color-x-d;
                     font-weight: 700;
                     font-family: 'Cormorant Garamond';
+                    margin-bottom: 14px;
                 }
                 p{
                     font-size: 14px;
@@ -214,7 +227,7 @@ main{
         
     }
     .main-product{
-        margin-top: 90px;
+        margin-top: 80px;
         .product-title{
             margin-top: 38px;
             margin-bottom: 60px;
@@ -245,7 +258,7 @@ main{
         }
         
         .name-product{
-            margin-top: 10px;
+            margin-top: 5px;
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 30px;
@@ -263,13 +276,16 @@ main{
                 text-align: center;
             }
         }
-        
+        .sub-product{
+            margin-top: -12px;
+        }
         .product-hover{
             align-items: center;
             position: relative;
             img{
                 display: block;
                 width: 100%;
+                padding-top: 15px;
             }
             .add-to-cart{
                 position: absolute;
@@ -331,7 +347,7 @@ main{
         padding-bottom: 80px;
         .blog-content{
             width: 100%;
-            margin: 30px;
+            margin-top: 28px;
             background-color: @color-w;
             border-color: rgba(0, 0, 0, 0.5);
             padding: 5px;
@@ -340,16 +356,17 @@ main{
                 width: 100%;
             }
             .blog__time{
+                text-transform: @tran;
                 font-size: 14px;
                 letter-spacing: 1px;
                 line-height: 24px;
                 color: @color-c;
                 font-weight: 400;
                 font-family: 'Fira Sans';
-                margin: 30px;
+                margin: 26px 0 0 32px;
             }
             .blog__title{
-                margin: 30px;
+                margin: 18px 0 20px 32px;
                 font-size: 24px;
                 letter-spacing: 1px;
                 line-height: 32px;
@@ -358,13 +375,15 @@ main{
                 font-family: 'Cormorant Garamond';
             }
             .blog__view-share{
-                margin: 30px;
+                margin: 62px 0 20px 32px;
                 i{
+                    padding-right: 20px;
                     font-size: @size-1;
                     opacity: @opacity-1;
                     color: @color-xb;
                     font-style: normal;
                     span{
+                        padding-left: 10px;
                         color: @color-x-d;
                         font-size: 14px;
                         line-height: 32px;
@@ -378,7 +397,7 @@ main{
             }
         }
         h2{
-            margin-top: -20px;
+            margin-top: -22px;
             font-size: 56px;
             line-height: 28px;
             color: @color-x-d;
@@ -389,7 +408,7 @@ main{
         }
         
         .blog-khoi{
-            margin-top: 40px;
+            margin-top: 70px;
             margin-bottom: 50px;
             background-color: @color-w;
             width: 160px;
@@ -411,7 +430,7 @@ main{
         }
     }
     .main-logo{
-        margin: 50px 0;
+        margin: 35px 0;
         img{
             opacity: 0.3;
             &:hover{
