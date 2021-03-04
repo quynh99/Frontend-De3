@@ -17,12 +17,14 @@ header {
         width: 90%;
         position: absolute;
         top: 3%;
-        left: 5.3%;
+        left: 4.5%;
         .logo{
             width: 90%;
+            
         }
         .cart{
             width: 10%;
+            padding: 13px 10px 10px 26px;
             ul{
                 list-style: none;
                 display:flex;
@@ -42,12 +44,14 @@ header {
                         text-align: center;
                     }
                 }
+                .menu{
+                    padding-left: 32px;
+                }
             }
         }
         
     }
     .header-title{
-        // max-width: 1720px;
         margin: 0;
         padding: 0 1em;
         position: absolute;
@@ -56,12 +60,12 @@ header {
         .sub-header-title{
             h5{
                 font-size: 24px;
-                letter-spacing: 12px;
+                letter-spacing: 13px;
                 line-height: 32px;
                 color: @color-d-x;
                 font-weight: 400;
                 font-family: 'Fira Sans';
-                margin-bottom: 30px;
+                margin-bottom: 33px;
             }
             h1{
                 font-size: 100px;
@@ -73,11 +77,11 @@ header {
                 text-align: left;
                 font-style: italic;
                 font-family: 'Cormorant Garamond';
-                margin-bottom: 60px;
+                margin-bottom: 57px;
          
             }
             div{
-                background-color: @color-b;
+                background-color: @color-x-d;
                 padding: @size-1;
                 width: 17.5%;
                 text-align: center;
@@ -96,11 +100,22 @@ header {
             }
         }
         ul{
-            margin-top: 20%;
+            display: flex;
+            flex-direction: column;
+            -ms-flex-direction: column;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            align-items: flex-start;
+            margin-top: 23%;
+            margin-left: 42%;
             li{
                 list-style: none;
                 text-align: right;
+                margin-right: 0;
+                text-align: right;
                 a{
+                    max-width: 100%;
+                    height: 100%;
                     font-size: 24px;
                     letter-spacing: 2px;
                     line-height: 40px;
@@ -109,9 +124,22 @@ header {
                     font-family: 'Cormorant Garamond';
                     text-align: right;
                     opacity: @opacity-1;
+                    position: relative;
                     &:hover{
                         opacity: 1;
+                        
+                        &::before{
+                            top: 15px;
+                            position: absolute;
+                            content: '';
+                            left: 150px;
+                            height: 2px;
+                            width: 80px;
+                            background-color: @color-b;
+                        }
                     }
+                    
+                    
                 }
                 
             }
@@ -122,4 +150,3 @@ header {
     }
     
 }
-
